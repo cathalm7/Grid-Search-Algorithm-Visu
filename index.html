@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graph Search Algorithm</title>
+    <link rel="stylesheet" href="css/bundle.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class = "title">Graph Search Visualization</h1>
+    </div>
+
+    <div class = "grid">
+	    <table id="grid"></table>
+    </div>
+    <div class="control-board">
+        <div class="algorithms">
+            <h3>Algorithms: </h3>
+            <label><input type="radio" name="algorithm" value="bfs" checked> Breadth First Search</label>
+            <label><input type="radio" name="algorithm" value="dfs"> Depth First Search</label>
+            <label><input type="radio" name="algorithm" value="a_star"> A* search</label>
+        </div>
+        <div class="heuristics" style="display: none;">
+            <h3>Heuristic: </h3>
+            <label><input type="radio" name="heuristic" value="euclidean"> Euclidean distance</label>
+            <label><input type="radio" name="heuristic" value="manhattan" > Manhattan distance</label>
+            <label><input type="radio" name="heuristic" value="octile"> Octile distance</label>
+            <label><input type="radio" name="heuristic" value="diagonal"> Diagonal distance</label>
+        </div>
+        <div class="options">
+            <h3>Options: </h3>
+            <button id="solve" class="solve">Solve</button>
+            <button id="keepWall" class="keepWall">Keep Walls</button>
+            <button id="reset" class="reset">Reset</button>
+        </div>
+    </div>
+      
+</body>
+
+<script type="module" src="js/main.js"></script>
+</html>
